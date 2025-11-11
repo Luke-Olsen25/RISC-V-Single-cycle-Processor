@@ -1,0 +1,73 @@
+QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+Start time: 20:07:20 on Nov 02,2025
+vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd internal/testpy/tb.vhd proj/src/RISCV_types.vhd proj/src/TopLevel/branch_comp.vhd proj/src/TopLevel/N_Full_Adder.vhd proj/src/TopLevel/Reg_N.vhd proj/src/TopLevel/invg.vhd proj/src/TopLevel/mem.vhd proj/src/TopLevel/mux2t1_N.vhd proj/src/TopLevel/ControlUnit.vhd proj/src/TopLevel/RISCV_Processor.vhd proj/src/TopLevel/nAdd_Sub.vhd proj/src/TopLevel/xorg2.vhd proj/src/TopLevel/ALU.vhd proj/src/TopLevel/RegisterFile.vhd proj/src/TopLevel/FetchLogic.vhd proj/src/TopLevel/mux32t1_N.vhd proj/src/TopLevel/mux3t1_N.vhd proj/src/TopLevel/ImmGen.vhd proj/src/TopLevel/ProgramCounter.vhd proj/src/TopLevel/decoder_5to32.vhd proj/src/TopLevel/BarrelShifter.vhd proj/src/TopLevel/Reg.vhd proj/src/TopLevel/mux2t1.vhd proj/src/TopLevel/andg2.vhd proj/src/TopLevel/dffg.vhd proj/src/TopLevel/org2.vhd proj/src/TopLevel/mux4t1_N.vhd proj/src/TopLevel/Full_Adder.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package RISCV_types
+-- Compiling package body RISCV_types
+-- Loading package RISCV_types
+-- Loading package std_logic_textio
+-- Loading package ENV
+-- Compiling entity tb
+-- Compiling architecture mixed of tb
+** Warning: proj/src/RISCV_types.vhd(15): (vcom-1615) Existing package 'RISCV_types' at line 18 will be overwritten.
+-- Compiling package RISCV_types
+** Warning: proj/src/RISCV_types.vhd(29): (vcom-1615) Existing package body 'RISCV_types(body)' at line 29 will be overwritten.
+-- Compiling package body RISCV_types
+-- Loading package RISCV_types
+-- Loading package NUMERIC_STD
+-- Compiling entity branch_comp
+-- Compiling architecture dataflow of branch_comp
+-- Compiling entity N_Full_Adder
+-- Compiling architecture structure of N_Full_Adder
+-- Compiling entity Reg_N
+-- Compiling architecture structure of Reg_N
+-- Compiling entity invg
+-- Compiling architecture dataflow of invg
+-- Compiling entity mem
+-- Compiling architecture rtl of mem
+-- Compiling entity mux2t1_N
+-- Compiling architecture structural of mux2t1_N
+-- Compiling entity controlUnit
+-- Compiling architecture dataflow of controlUnit
+-- Compiling entity RISCV_Processor
+-- Compiling architecture structure of RISCV_Processor
+-- Compiling entity nAdd_Sub
+-- Compiling architecture structure of nAdd_Sub
+-- Compiling entity xorg2
+-- Compiling architecture dataflow of xorg2
+-- Compiling entity ALU
+-- Compiling architecture structural of ALU
+-- Compiling entity RegisterFile
+-- Compiling architecture regFile of RegisterFile
+-- Compiling entity FetchLogic
+-- Compiling architecture structure of FetchLogic
+-- Compiling entity mux32t1_N
+-- Compiling architecture structural of mux32t1_N
+-- Compiling entity mux3t1_N
+-- Compiling architecture behavioral of mux3t1_N
+-- Compiling entity ImmGen
+-- Compiling architecture behavioral of ImmGen
+-- Compiling entity ProgramCounter
+-- Compiling architecture behavioral of ProgramCounter
+-- Compiling entity decoder_5to32
+-- Compiling architecture behavior of decoder_5to32
+-- Compiling entity barrelShifter
+-- Compiling architecture structural of barrelShifter
+-- Compiling entity Reg
+-- Compiling architecture behavior of Reg
+-- Compiling entity mux2t1
+-- Compiling architecture structural of mux2t1
+-- Compiling entity andg2
+-- Compiling architecture dataflow of andg2
+-- Compiling entity dffg
+-- Compiling architecture mixed of dffg
+-- Compiling entity org2
+-- Compiling architecture dataflow of org2
+-- Compiling entity mux4t1_N
+-- Compiling architecture structural of mux4t1_N
+-- Compiling entity Full_Adder
+-- Compiling architecture structure of Full_Adder
+End time: 20:07:20 on Nov 02,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 2
