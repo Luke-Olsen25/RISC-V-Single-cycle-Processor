@@ -68,7 +68,12 @@ begin
     gen_s4: for i in 0 to 31 generate
 	signal s16_t : std_logic;
     begin
-	s16_t <= s_SHIFTIN(i-16) when (i-16) >= 0 else fill_bit;
+	gen_shift_16: if i >= 16 generate
+        	s16_t <= s_SHIFTIN(i-16);
+    	end generate gen_shift_16;
+    	gen_fill_16: if i < 16 generate
+            s16_t <= fill_bit;
+        end generate gen_fill_16;
         mux4: mux2t1
             port map(
                 i_S  => i_SHIFT(4),
@@ -82,7 +87,12 @@ begin
     gen_s3: for i in 0 to 31 generate
 	signal s8_t : std_logic;
     begin
-	s8_t <= s16(i-8) when i-8 >= 0 else fill_bit;
+	gen_shift_8: if i >= 8 generate
+            s8_t <= s16(i-8);
+        end generate gen_shift_8;
+        gen_fill_8: if i < 8 generate
+            s8_t <= fill_bit;
+        end generate gen_fill_8;
         mux4: mux2t1
             port map(
                 i_S  => i_SHIFT(3),
@@ -96,7 +106,12 @@ begin
     gen_s2: for i in 0 to 31 generate
 	signal s4_t : std_logic;
     begin
-	s4_t <= s8(i-4) when i-4 >= 0 else fill_bit;
+	gen_shift_4: if i >= 4 generate
+            s4_t <= s8(i-4);
+        end generate gen_shift_4;
+        gen_fill_4: if i < 4 generate
+            s4_t <= fill_bit;
+        end generate gen_fill_4;
         mux4: mux2t1
             port map(
                 i_S  => i_SHIFT(2),
@@ -110,7 +125,12 @@ begin
     gen_s1: for i in 0 to 31 generate
 	signal s2_t : std_logic;
     begin
-	s2_t <= s4(i-2) when i-2 >= 0 else fill_bit;
+	gen_shift_2: if i >= 2 generate
+            s2_t <= s4(i-2);
+        end generate gen_shift_2;
+        gen_fill_2: if i < 2 generate
+            s2_t <= fill_bit;
+        end generate gen_fill_2;
         mux4: mux2t1
             port map(
                 i_S  => i_SHIFT(1),
@@ -124,7 +144,12 @@ begin
     gen_s0: for i in 0 to 31 generate
 	signal s1_t : std_logic;
     begin
-	s1_t <= s2(i-1) when i-1 >= 0 else fill_bit;
+	gen_shift_1: if i >= 1 generate
+            s1_t <= s2(i-1);
+        end generate gen_shift_1;
+        gen_fill_1: if i < 1 generate
+            s1_t <= fill_bit;
+        end generate gen_fill_1;
         mux4: mux2t1
             port map(
                 i_S  => i_SHIFT(0),
